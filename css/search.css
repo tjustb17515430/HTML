@@ -1,0 +1,115 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: lightblue;
+}
+#search{
+    width: 100%;
+    height: 1200px;
+    
+}
+#top{
+    width: 80%;
+    height: 100px;
+    margin:  auto;
+}
+#top .nav{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+#top .nav a{
+    display: inline-block;
+    padding: 0 50px;
+    text-decoration:none ; 
+    color: black;
+}
+#top .s{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+}
+#top .s input{
+    width: 65%;
+    height: 30px;
+    left: 50px;
+}
+#top .s button{
+    height: 30px;
+    width: 100px;
+    
+}
+#top .s a{
+    text-decoration:none ; 
+    color: black;
+}
+.fenlei{
+    width: 60%;
+    
+    height: 50px;
+    margin: 0 auto;
+}
+.fenlei a{
+    text-decoration:none ; 
+    line-height: 50px;
+    margin: 10px;
+    color: black;
+}
+.xihuan{
+    width: 60%;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+.xihuan a{
+    text-decoration:none ; 
+    margin: 10px;
+    color: black;
+}
+.tupian{
+    width: 60%;
+    height: 820px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+.tupian ul{
+    width: 100%;
+    height: 200px;
+    padding: 0px 0px;
+    list-style: none;
+}
+.tupian li{
+    float: left;
+    margin: 5px;
+    height: 200px;
+    
+    padding: 0px 0px;
+}
+.tupian img{
+    height: 200px;
+    width: 100%;
+}
+.button{
+    width: 55%;
+    height: 50px;
+    /* background-color: fuchsia; */
+    margin: 0 auto;
+    position: relative;
+    left: 220px;
+}
+.button button{
+    height: 20px;
+    width: 40px;
+    text-align: left;
+}
+.button input{
+    height: 15px;
+    width: 60px;
+}
+.button button:last-child{
+    width: 50px;
+    height: 22px;
+}
