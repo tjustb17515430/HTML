@@ -4,8 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册</title>
+
+    <style>
+        .body{
+            background-color: aliceblue;
+            
+        }
+        #content{
+            
+            background-color: aliceblue;
+            text-align: center;
+            color: #FF0000;
+            font-weight: 900;
+            font-size: 25px;
+            align-self: center;
+            padding-top:center;
+            padding-bottom:center;
+            padding-right:500px;
+           padding-left:500px;
+           border: 8px solid #73AD21;
+        }
+        .page{
+            padding-top:25px;
+            padding-bottom:25px;
+            padding-right:50px;
+            padding-left:50px;
+            font-size: 77px;
+            
+        }
+        #nicheng{
+           
+            left: 40%;
+            background-color: aliceblue;
+            text-align: center;
+        }
+        #youxiang{
+
+            left: 40%;
+            background-color: aliceblue;
+            text-align: center;
+        }
+        #mima{
+
+            left: 40%;
+            background-color: aliceblue;
+            text-align: center;
+        }
+        #mimaqueren{
+     
+            left: 40%;
+            background-color: aliceblue;
+            text-align: center;
+        }
+        #qingdenglu{
+
+            left: 40%;
+            background-color: aliceblue;
+            text-align: center;
+        }
+        #xieyi{
+
+            position: absolute;
+            left: 50%;
+            width: 300px;    
+            padding: 10px;
+        }
+    </style>
+
 </head>
-<body>
+
+<body class="body">
+        
+
+        <div class="page"> 
+                <ul id="menu">
+                    <li><a href="首页.html" title="首页">首页</a></li>
+                    
+                </ul>
+        </div>
+        
+        
+        
+            <div id="content">
+                <h2>请注册一个账号</h2>
+                    <form id="contact_form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                        <div id="nicheng"> 
+                             <p>
+                                 <label for="name">昵称:<input type="text" name="name" id="name" value="" style=" height: 100%; " />
+                             </p>
+                        </div>
+                        <div id="youxiang">
+                             <p> 
+                                 <label for="email">邮箱:<input type="text" name="email" id="email" value=""style=" height: 100%; " />
+                             </p>
+                        </div>
+                        <div id="mima">
+                             <p>
+                                 <label for="subject">密码:</label><input type="text" name="subject" id="subject" value="" style=" height: 100%; " />
+                             </p>   
+                        </div>
+                        <div id="mimaqueren"> 
+                             <p>
+                                 <label for="message">确认密码:</label><input type="text" name="subject" id="subject" value=""  />
+                             </p>
+                        </div>
+                        <div id="xieyi">
+                             <p>
+                                <label>&nbsp;</label><input type="submit" value="同意以下协议并注册" name="submit" class="send_btn"/>
+                             </p>
+                        
+                        <div id="qingdenglu">
+                             <p> 
+                            <a href="login.html">已有账号，请登录</a>
+                             </p>
+                  </form>
+            </div>
+        
+
+
+
     
 </body>
 </html>
