@@ -73,13 +73,13 @@
             color:rgb(116, 85, 64);
             text-decoration: none
         }
-        a:hover{color:rgb(243, 150, 63)}
+      /*  a:hover{color:rgb(243, 150, 63)}*/
         a:visited {color:  rgb(121, 142, 160)}
 
         .commodity_zone{
-            width: 80%;
+            width: 85%;
             margin: auto;
-            background-color: rgb(245, 178, 133);
+
             
         }
 
@@ -98,77 +98,107 @@
 
 
 
-        .z1{
-            float: left;
-            width: 50%;
 
-            text-align: center;
-            background-color: tomato;
-        }
-        .z2{
-            float:right;
-            width: 50%;
-            
-            text-align: center;
-            background-color: violet;
-        }
-        .z3{
-            float: left;
-            width: 50%;
-            
-            text-align: center;
-            background-color: turquoise;
-        }
-        .z4{
-            float:right;
-            width: 50%;
-           
-            text-align: center;
-            background-color: teal;
-        }
 
         .hot_items{
-            background-color: violet;
+            background-color: white;
             width: 100%;
+
+            margin-bottom: 20px;
+
+            overflow: hidden;
+            clear: both;
+        }
+        .hot_items_sale{
+            background-color: thistle;
+            list-style:none;
+            margin:0;
+            margin-top: 10px;
+            padding:0;
+        }
+        .item{
+            background-color: rgb(247, 238, 238);
+            float: left;
+            position: relative;
+            padding: 10px ;
+            width: 190px;
+            margin:-1px 1px 10px 1px ;
+            transition: border-color 0.3s;
+            border:1px solid rgb(247, 235, 228);
+        }
+        .item:hover{
+            border:1px solid rgb(255, 94, 0);
+         
+        }
+        .image{
+            display: block;
             text-align: center;
-            margin-bottom: 10px;
+
+            position: relative;
         }
-        .item1{
-            float: left;
-            text-align: center;
-            background-color: wheat;
-            width: 18%;
-            margin-left: 2vw;
+
+        .postfree{
+            height: 19px;
+            position: relative;
+            width: 30px;
+            display: inline-block;
+            top: 3px;
+            margin-right: 5px;
+
         }
-        .item2{
-            float: left;
-            text-align: center;
-            width: 18%;
-            background-color: burlywood;
-            margin-left: 1vw;
-            
+        .line_1{
+            display: block;
+            height: 40px;
+            line-height: 20px;
+            overflow: hidden;
+            margin: 5px 0;
+            color: rgb(48, 46, 46);
+            font-size: 15px;
+
         }
-        .item3{
-            float: left;
-            background-color: coral;
-            width: 18%;
-            margin-left:1vw;
-            
+        .lint_2{
+            background-color: black;
+            height: 18px;
+            margin-bottom: 18px;
         }
-        .item4{
-            float: left;
-            background-color: cornflowerblue;
-            width: 18%;
-            margin-left: 1vw;
-            
+        .line_3{
+            height: 25px;
+            line-height: 22px;
+            overflow: hidden;
         }
-        .item5{
+        .promo{
             float: left;
-            background-color:darkgrey;
-            width: 18%;
-            margin-left: 1vw;
+            color: rgb(218, 93, 47);
+            font-family: arial;
+            margin-right: 3px;
+            font-size: 23px;
+        }
+        .price{
+            float: left;
+            color: darkgray;
+            font-family: Arial;
+            text-decoration: line-through;
+            font-size: 15px;
+            margin: 2px auto 10px 2px;
+        }
+        .sell{
+            color:rgb(97, 92, 92);
+            float: right;
+            display: block;
+            margin-top: 3px ;
+            font-size: 12px;;
+        }
+        .comment{
+            font-size: 13px;
+            margin-right:1px;
            
+            color: rgb(97, 92, 92);
         }
+
+
+
+
+
 
         #index{
             float: left;
@@ -391,59 +421,192 @@
         <a href="#"><img src="../img/index/TB1MDBzuUY1gK0jSZFMSuuWcVXa.jpg" width="100%"></a>
     </div>
 
-    <div class="hot_items">
-        <div style="float: left; background-color:rgb(235, 223, 119); width: 100%;height: 40px;margin-top: 10px; text-align: center; ">
-            <a href="#" style="font-size: 20px; color: tomato;">热卖单品</a>
-        </div>
-        <div class="item1">
-            <a href="#"><img src="../img/search/13.jpg" width="100%"></a>
-            <a href="#">商品信息</a>
-        </div>
-        <div class="item2">
-            <a href="#"><img src="../img/search/13.jpg" width="100%"></a>
-            <a href="#">商品信息</a>
-        </div>
-        <div class="item3">
-            <a href="#"><img src="../img/search/13.jpg" width="100%"></a>
-            <a href="#">商品信息</a>
-        </div>
-        <div class="item4">
-            <a href="#"><img src="../img/search/13.jpg" width="100%"></a>
-            <a href="#">商品信息</a>
-        </div>
-        <div class="item5">
-            <a href="#"><img src="../img/search/13.jpg" width="100%"></a>
-            <a href="#">商品信息</a>
-        </div>
-    </div>
 
-    <div class="hot_items">
-        <div style="float: left; background-color:rgb(235, 223, 119); width: 100%;height: 40px;margin-top: 10px; text-align: center; ">
-            <a href="#" style="font-size: 20px; color: tomato;">热卖单品</a>
+   
+        <div class="hot_items">
+            <h3>热卖单品</h3>
+            <ul class="hot_items_sale clear:both">
+                <li class="item">
+                    <a title="item1" class="image" href="#">
+                        <img src="../img/index/item1.jpg">
+                    </a>
+                    <a title="item1" class="line_1" href="#">
+                        <img src="../img/index/postfree.png" class="postfree">百事一口阳光有料亲子夹心海苔脆
+                    </a>
+                    <div class="line_2">
+                        <a class="comment">评价<em>851</em></a>
+                        <a class="comment">收藏<em>4320</em></a>
+                    </div>
+                    <div class="line_3" >
+                        <a class="promo"><span>¥</span><em>30</em></a>
+                        <a class="price"><span>¥</span><em>45</em></a>
+                        <a class="sell">月销<em>6501</em></a>
+                    </div>
+                </li>
+                <li class="item">
+                    <a title="item1" class="image" href="#">
+                        <img src="../img/index/item1.jpg">
+                    </a>
+                    <a title="item1" class="line_1" href="#">
+                        <img src="../img/index/postfree.png" class="postfree">百事一口阳光有料亲子夹心海苔脆
+                    </a>
+                    <div class="line_2">
+                        <a class="comment">评价<em>851</em></a>
+                        <a class="comment">收藏<em>4320</em></a>
+                    </div>
+                    <div class="line_3" >
+                        <a class="promo"><span>¥</span><em>30</em></a>
+                        <a class="price"><span>¥</span><em>45</em></a>
+                        <a class="sell">月销<em>6501</em></a>
+                    </div>
+                </li>
+                <li class="item">
+                    <a title="item1" class="image" href="#">
+                        <img src="../img/index/item1.jpg">
+                    </a>
+                    <a title="item1" class="line_1" href="#">
+                        <img src="../img/index/postfree.png" class="postfree">百事一口阳光有料亲子夹心海苔脆
+                    </a>
+                    <div class="line_2">
+                        <a class="comment">评价<em>851</em></a>
+                        <a class="comment">收藏<em>4320</em></a>
+                    </div>
+                    <div class="line_3" >
+                        <a class="promo"><span>¥</span><em>30</em></a>
+                        <a class="price"><span>¥</span><em>45</em></a>
+                        <a class="sell">月销<em>6501</em></a>
+                    </div>
+                </li>
+                <li class="item">
+                    <a title="item1" class="image" href="#">
+                        <img src="../img/index/item1.jpg">
+                    </a>
+                    <a title="item1" class="line_1" href="#">
+                        <img src="../img/index/postfree.png" class="postfree">百事一口阳光有料亲子夹心海苔脆
+                    </a>
+                    <div class="line_2">
+                        <a class="comment">评价<em>851</em></a>
+                        <a class="comment">收藏<em>4320</em></a>
+                    </div>
+                    <div class="line_3" >
+                        <a class="promo"><span>¥</span><em>30</em></a>
+                        <a class="price"><span>¥</span><em>45</em></a>
+                        <a class="sell">月销<em>6501</em></a>
+                    </div>
+                </li>
+                <li class="item">
+                    <a title="item1" class="image" href="#">
+                        <img src="../img/index/item1.jpg">
+                    </a>
+                    <a title="item1" class="line_1" href="#">
+                        <img src="../img/index/postfree.png" class="postfree">百事一口阳光有料亲子夹心海苔脆
+                    </a>
+                    <div class="line_2">
+                        <a class="comment">评价<em>851</em></a>
+                        <a class="comment">收藏<em>4320</em></a>
+                    </div>
+                    <div class="line_3" >
+                        <a class="promo"><span>¥</span><em>30</em></a>
+                        <a class="price"><span>¥</span><em>45</em></a>
+                        <a class="sell">月销<em>6501</em></a>
+                    </div>
+                </li>
+            </ul>
+            
         </div>
-        <div class="item1">
-            <a href="#"><img src="../img/search/13.jpg" width="100%"></a>
-            <a href="#">商品信息</a>
-        </div>
-        <div class="item2">
-            <a href="#"><img src="../img/search/13.jpg" width="100%"></a>
-            <a href="#">商品信息</a>
-        </div>
-        <div class="item3">
-            <a href="#"><img src="../img/search/13.jpg" width="100%"></a>
-            <a href="#">商品信息</a>
-        </div>
-        <div class="item4">
-            <a href="#"><img src="../img/search/13.jpg" width="100%"></a>
-            <a href="#">商品信息</a>
-        </div>
-        <div class="item5">
-            <a href="#"><img src="../img/search/13.jpg" width="100%"></a>
-            <a href="#">商品信息</a>
-        </div>
-    </div>
 
-    <div style="text-align: center;float: left; margin-top: 20px;">
+        <div class="hot_items">
+            <h3>热卖单品</h3>
+            <ul class="hot_items_sale">
+                <li class="item">
+                    <a title="item1" class="image" href="#">
+                        <img src="../img/index/item1.jpg">
+                    </a>
+                    <a title="item1" class="line_1" href="#">
+                        <img src="../img/index/postfree.png" class="postfree">百事一口阳光有料亲子夹心海苔脆
+                    </a>
+                    <div class="line_2">
+                        <a class="comment">评价<em>851</em></a>
+                        <a class="comment">收藏<em>4320</em></a>
+                    </div>
+                    <div class="line_3" >
+                        <a class="promo"><span>¥</span><em>30</em></a>
+                        <a class="price"><span>¥</span><em>45</em></a>
+                        <a class="sell">月销<em>6501</em></a>
+                    </div>
+                </li>
+                <li class="item">
+                    <a title="item1" class="image" href="#">
+                        <img src="../img/index/item1.jpg">
+                    </a>
+                    <a title="item1" class="line_1" href="#">
+                        <img src="../img/index/postfree.png" class="postfree">百事一口阳光有料亲子夹心海苔脆
+                    </a>
+                    <div class="line_2">
+                        <a class="comment">评价<em>851</em></a>
+                        <a class="comment">收藏<em>4320</em></a>
+                    </div>
+                    <div class="line_3" >
+                        <a class="promo"><span>¥</span><em>30</em></a>
+                        <a class="price"><span>¥</span><em>45</em></a>
+                        <a class="sell">月销<em>6501</em></a>
+                    </div>
+                </li>
+                <li class="item">
+                    <a title="item1" class="image" href="#">
+                        <img src="../img/index/item1.jpg">
+                    </a>
+                    <a title="item1" class="line_1" href="#">
+                        <img src="../img/index/postfree.png" class="postfree">百事一口阳光有料亲子夹心海苔脆
+                    </a>
+                    <div class="line_2">
+                        <a class="comment">评价<em>851</em></a>
+                        <a class="comment">收藏<em>4320</em></a>
+                    </div>
+                    <div class="line_3" >
+                        <a class="promo"><span>¥</span><em>30</em></a>
+                        <a class="price"><span>¥</span><em>45</em></a>
+                        <a class="sell">月销<em>6501</em></a>
+                    </div>
+                </li>
+                <li class="item">
+                    <a title="item1" class="image" href="#">
+                        <img src="../img/index/item1.jpg">
+                    </a>
+                    <a title="item1" class="line_1" href="#">
+                        <img src="../img/index/postfree.png" class="postfree">百事一口阳光有料亲子夹心海苔脆
+                    </a>
+                    <div class="line_2">
+                        <a class="comment">评价<em>851</em></a>
+                        <a class="comment">收藏<em>4320</em></a>
+                    </div>
+                    <div class="line_3" >
+                        <a class="promo"><span>¥</span><em>30</em></a>
+                        <a class="price"><span>¥</span><em>45</em></a>
+                        <a class="sell">月销<em>6501</em></a>
+                    </div>
+                </li>
+                <li class="item">
+                    <a title="item1" class="image" href="#">
+                        <img src="../img/index/item1.jpg">
+                    </a>
+                    <a title="item1" class="line_1" href="#">
+                        <img src="../img/index/postfree.png" class="postfree">百事一口阳光有料亲子夹心海苔脆
+                    </a>
+                    <div class="line_2">
+                        <a class="comment">评价<em>851</em></a>
+                        <a class="comment">收藏<em>4320</em></a>
+                    </div>
+                    <div class="line_3" >
+                        <a class="promo"><span>¥</span><em>30</em></a>
+                        <a class="price"><span>¥</span><em>45</em></a>
+                        <a class="sell">月销<em>6501</em></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    <div style="text-align: center;float: left; margin-top: 20px; width: 100%;">
         <a href="#"><img src="../img/index/TB1j_z6AbY1gK0jSZTESutDQVXa.jpg" width="33%"></a>
         <a href="#"><img src="../img/index/TB1JjIuJmf2gK0jSZFPXXXsopXa.jpg" width="33%"></a>
         <a href="#"><img src="../img/index/TB1LtW8G1H2gK0jSZFESuwqMpXa.jpg" width="33%"></a>
