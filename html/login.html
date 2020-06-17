@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录</title>
-</head>
-<body>
     
+    
+        <link rel="stylesheet" href="../css/login.css">
+        
+</head>
+          
+          
+ <body class="body">
+                <div class="page"> 
+                     <ul id="menu">
+                         <li><a href="首页.html" title="首页">首页</a></li>                          
+                     </ul>
+                </div>
+    
+                <div id="content">
+                        <h2>请登录</h2>
+                          <form id="contact_form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                             <div id="nicheng">
+                                 <p>
+                                     <label for="name">昵称:</label><input type="text" name="name" id="name" value="" />
+                                 </p>
+                             </div>
+                             <div id="mima">
+                                 <p>
+                                     <label for="subject">密码:  </label><input type="text" name="subject" id="subject" value=""  />
+                                 </p>
+                             </div>
+                            </div>
+                             <div id="denglu">
+                                    <p>
+                                        <button class="button button1">请登录</button>
+                                    </p>
+                             <div id="qingzhuce">
+                                    <p> 
+                                       <a href="register.html">没有账号？请注册</a>
+                                    </p>
+                             
+                </div>
+            </div>  
 </body>
 </html>

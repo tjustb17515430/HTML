@@ -1,0 +1,63 @@
+.body{
+    background-color: aliceblue;
+    
+}
+#content{
+    
+    background-color: aliceblue;
+    text-align: center;
+    color: #FF0000;
+    font-weight: 900;
+    font-size: 25px;
+    align-self: center;
+    padding-top:center;
+    padding-bottom:center;
+    padding-right:500px;
+   padding-left:500px;
+   border: 8px solid #73AD21;
+}
+.page{
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-right:50px;
+    padding-left:50px;
+    font-size: 77px;
+    
+}
+#nicheng{
+   
+    left: 40%;
+    background-color: aliceblue;
+    text-align: center;
+}
+#youxiang{
+
+    left: 40%;
+    background-color: aliceblue;
+    text-align: center;
+}
+#mima{
+
+    left: 40%;
+    background-color: aliceblue;
+    text-align: center;
+}
+#mimaqueren{
+
+    left: 40%;
+    background-color: aliceblue;
+    text-align: center;
+}
+#qingdenglu{
+
+    left: 40%;
+    background-color: aliceblue;
+    text-align: center;
+}
+#xieyi{
+
+    position: absolute;
+    left: 50%;
+    width: 300px;    
+    padding: 10px;
+}
