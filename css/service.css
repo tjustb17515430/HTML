@@ -4,7 +4,7 @@
     margin: 0;
     font-size: 14px;
     text-decoration: none;
-    color: green;
+    color: rgb(221, 33, 58);
     outline: none;
 }
  * {
@@ -13,7 +13,7 @@
     margin: 0;
     font-size: 14px;
     text-decoration: none;
-    color: black;
+    color: rgb(31, 0, 18);
     outline: none;
 }
  
@@ -27,13 +27,13 @@ html, body {
     height: 800px;
     width: 1005px;
     margin: auto;
-    box-shadow: 0 0 3px 5px #e1e1e1;
+    box-shadow: 0 0 3px 5px #9e093a;
 }
  
 .main .top {
     width: 1005px;
     height: 60px;
-    background-color: #3bb4f2;
+    background-color: #db1a00;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -49,7 +49,7 @@ html, body {
     height: 48px;
     width: 48px;
     border-radius: 50%;
-    background-image: url("../img/111.png");
+    background-image: url("../img/service/4.jpg");
     line-height: 60px;
     display: inline-block;
     margin: 6px;
@@ -57,7 +57,7 @@ html, body {
 }
  
 .main .top .top-left .header:hover {
-    border: 1px solid white;
+    border: 1px solid rgb(204, 22, 22);
 }
  
 .main .top .top-left .search {
@@ -72,19 +72,19 @@ html, body {
     width: 110px;
     height: 30px;
     border-radius: 40px;
-    border: 1px solid ghostwhite;
+    border: 1px solid rgb(204, 22, 22);
     text-indent: 40px;
-    background-color: #3bb4f2;
+    background-color: #a8153a;
  
 }
  
 .main .top .top-left .search input:hover {
-    border: 1px solid white;
+    border: 1px solid rgb(195, 230, 181);
 }
  
 .main .top .top-left .search .icon-sear {
  
-    background-image: url("../img/sou.png");
+    background-image: url("../img/service/2.jpg");
     background-size: 100% 100%;
     height: 30px;
     width: 30px;
@@ -110,7 +110,7 @@ html, body {
 }
  
 .main .top .top-type .news {
-    background-image: url("../img/news.png");
+    background-image: url("../img/service/6.png");
  
 }
  
@@ -352,7 +352,7 @@ html, body {
 }
  
 .main .box .box-right .sendto .but-nav ul li.font {
-    background-image: url("../img/font.png");
+    background-image: url("../img/service/1.jpg");
 }
  
 .main .box .box-right .sendto .but-nav ul li.face {
@@ -382,7 +382,7 @@ html, body {
 .main .box .box-right .sendto .but-text .button {
     float: right;
     padding: 5px 25px;
-    background-color: #3bb4f2;
+    background-color: #e07bd3;
     margin-right: 20px;
 }
  
