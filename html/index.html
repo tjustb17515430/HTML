@@ -13,11 +13,13 @@
         }
         .top{
             background-color:blanchedalmond;
-            width: 100%;
-            height: 5vh;
-            margin:1px auto 10px auto;
+            width:100%;
+            border-bottom: 1px solid #eee;
+            z-index: 9999;
         }
-        
+        .cover{
+            color: #000;
+        }
         .head{
             margin:0 auto 15px auto;
             width: 80%;
@@ -78,7 +80,7 @@
             color:rgb(116, 85, 64);
             text-decoration: none
         }
-      /*  a:hover{color:rgb(243, 150, 63)}*/
+        a:hover{color:rgb(238, 121, 54)}
         a:visited {color:  rgb(121, 142, 160)}
 
       
@@ -87,19 +89,23 @@
 
         .layer{
             background-color: aqua;
-            width: auto;
-            margin: auto;
+            width:100%;
             clear: both;
         }
         .discover{
-            margin-top: 10px;
+            margin: 10px auto 10px auto;
+            background-color: burlywood;
+            padding: 0px 1px 0px 1px;
+            min-width:1170px;
+            max-width: 1170px;
+            overflow: hidden;
         }
         .goods_inner{
-            background-color: cadetblue;
-            width: 490px;
+
             position: relative;
+            max-width: 585px;
+            max-height: 620px;
             float: left;
-            height: 658px;
         }
         .discover_title{
             padding-left: 20px;
@@ -114,11 +120,56 @@
             float: left;
             display: inline;
         }
+        .goods_list{
+            overflow: hidden;
+            padding-left: 32px;
+            list-style: none;
+        }
+        .goods{
+            display: block;
+            float: left;
+            overflow: hidden;
+            margin: 0 4px 2px 0;
+            width:170px;
+            
+        }
+        .good_img{
+            height: 148px;
+            width: 100%;
+            margin:10px auto 10px auto;
+            overflow: hidden;
+            transition：opacity.2s;
+        }
+        .good_img:hover{
+            opacity:0.8;
+
+        }
+        .good_all{
+            height: 160px;
+            width: 100%;
+            display: block;
+        }
+        .info{
+            overflow: hidden;
+            padding:0 4px 0 6px;
+        }
+        .filter{
+            font-size: 15px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .intro{
+            margin:1px 0 1px 0;
+            font-size: 13px;
+        }
+        .extra{
+           margin-top: 1px;
+           margin-bottom: 1px;
+        }
         .hot_items{
             background-color: rgb(241, 166, 166);
             margin: auto;
-            max-width: 1170px;
-            min-width: 500px;
+            width: 1170px;
         }
         .hot_items_sale{
             background-color: thistle;
@@ -253,27 +304,43 @@
     </style>
 </head>
 <body class="body">
+<div class="cover">
+    <div class="top">
+        <div class="top_nav">
+            <ul class="nav_l">
+                <li class="nav_menu">
+                    <div class="nav_menu_hd">
+                        <span class="nav_region">中国大陆</span>
+                        <span class="nav_arrow">
+                            <span class="arrow_icon"></span>
+                        </span>
+                    </div>
+                    <div class="nav_menu_hd nav_menu_list">
+                        <ul class="nav_region_option">
+                            <li class="nav_region_item" role="option">
+                                全球
+                            </li>
+                            <li class="nav_region_item" role="option">
+                                中国大陆
+                            </li>
+                            <li class="nav_region_item" role="option">
+                                中国香港
+                            </li>
+                            <li class="nav_region_item" role="option">
+                                中国台湾
+                            </li>
+                            <li class="nav_region_item" role="option">
+                                中国澳门
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-<div class="top">
-     <div id="index">
-        <a href="#">首页</a>
-     </div>
-    <div id="login">
-         <a href="#">登录</a>
-    </div>
-    <div id="reg">
-         <a href="#">注册</a>
-     </div>
-     <div id="msg">
-        <a href="#">消息</a>
-     </div>
-     <div id="cart">
-           <a href="#">购物车</a>
-     </div>
-    <div id="fav">
-           <a href="#">收藏夹</a>
     </div>
 </div>
+
 
 <div class="head">
     
@@ -359,46 +426,155 @@
     </div>
 </div>
 
-
-
-<!--分区-->
+<!--推荐-->
 <div class="layer">
     <div class="discover">
-        <div class="goods_inner">
-
-            <h3 class="discover_title">   
-                <img title="有好货" src="../img/index/youhaohuo.png" class="logo" >
-                <p>
-                    <span class="subtitle">与品质不期而遇</span>
-                </p>
-            </h3>
-
-            <ul class="goods_list">
-                <a href="#">
-                    <div class="good_img">
-                        <img src="../img/index/goods/good1.png" class="filter">
-                    </div>
-                    <div class="info">
-                        <h4 class="filter">西伯利亚游戏耳机外置声卡</h4>
-                        <p>采用西伯利亚游戏3D立体声卡</p>
-                        <p class="extra">0 人说好</p>
-                    </div>
-                </a>
-            </ul>
-            
-            
-            
+            <div class="goods_inner">
+                <h3 class="discover_title">   
+                    <img title="有好货" src="../img/index/youhaohuo.png" class="logo" >
+                    <p>
+                        <span class="subtitle">与品质不期而遇</span>
+                    </p>
+                </h3>
+                <ul class="goods_list">
+                    <a href="#" class="goods">
+                        <div class="good_img">
+                            <img src="../img/index/goods/good1.png" class="good_all">
+                        </div>
+                        <div class="info">
+                            <h4 class="filter">西伯利亚游戏耳机外置声卡</h4>
+                            <p class="intro">采用西伯利亚游戏3D立体声卡</p>
+                            <p class="extra">0 人说好</p>
+                        </div>
+                    </a>
+                    <a href="#" class="goods">
+                        <div class="good_img">
+                            <img src="../img/index/goods/good1.png" class="good_all">
+                        </div>
+                        <div class="info">
+                            <h4 class="filter">西伯利亚游戏耳机外置声卡</h4>
+                            <p class="intro">采用西伯利亚游戏3D立体声卡</p>
+                            <p class="extra">0 人说好</p>
+                        </div>
+                    </a>
+                    <a href="#" class="goods">
+                        <div class="good_img">
+                            <img src="../img/index/goods/good1.png" class="good_all">
+                        </div>
+                        <div class="info">
+                            <h4 class="filter">西伯利亚游戏耳机外置声卡</h4>
+                            <p class="intro">采用西伯利亚游戏3D立体声卡</p>
+                            <p class="extra">0 人说好</p>
+                        </div>
+                    </a>
+                    <a href="#" class="goods">
+                        <div class="good_img">
+                            <img src="../img/index/goods/good1.png" class="good_all">
+                        </div>
+                        <div class="info">
+                            <h4 class="filter">西伯利亚游戏耳机外置声卡</h4>
+                            <p class="intro">采用西伯利亚游戏3D立体声卡</p>
+                            <p class="extra">0 人说好</p>
+                        </div>
+                    </a>
+                    <a href="#" class="goods">
+                        <div class="good_img">
+                            <img src="../img/index/goods/good1.png" class="good_all">
+                        </div>
+                        <div class="info">
+                            <h4 class="filter">西伯利亚游戏耳机外置声卡</h4>
+                            <p class="intro">采用西伯利亚游戏3D立体声卡</p>
+                            <p class="extra">0 人说好</p>
+                        </div>
+                    </a>
+                    <a href="#" class="goods">
+                        <div class="good_img">
+                            <img src="../img/index/goods/good1.png" class="good_all">
+                        </div>
+                        <div class="info">
+                            <h4 class="filter">西伯利亚游戏耳机外置声卡</h4>
+                            <p class="intro">采用西伯利亚游戏3D立体声卡</p>
+                            <p class="extra">0 人说好</p>
+                        </div>
+                    </a>
+                </ul>
             </div>
-        </div>
-
-        
-        <div style="width: 100%; float: left;">
-            <a href="#"><img src="../img/index/TB1MDBzuUY1gK0jSZFMSuuWcVXa.jpg" width="100%"></a>
-        </div>
+            <div class="goods_inner">
+                <h3 class="discover_title">   
+                    <img title="有好货" src="../img/index/youhaohuo.png" class="logo" >
+                    <p>
+                        <span class="subtitle">与品质不期而遇</span>
+                    </p>
+                </h3>
+                <ul class="goods_list">
+                    <a href="#" class="goods">
+                        <div class="good_img">
+                            <img src="../img/index/goods/good1.png" class="good_all">
+                        </div>
+                        <div class="info">
+                            <h4 class="filter">西伯利亚游戏耳机外置声卡</h4>
+                            <p class="intro">采用西伯利亚游戏3D立体声卡</p>
+                            <p class="extra">0 人说好</p>
+                        </div>
+                    </a>
+                    <a href="#" class="goods">
+                        <div class="good_img">
+                            <img src="../img/index/goods/good1.png" class="good_all">
+                        </div>
+                        <div class="info">
+                            <h4 class="filter">西伯利亚游戏耳机外置声卡</h4>
+                            <p class="intro">采用西伯利亚游戏3D立体声卡</p>
+                            <p class="extra">0 人说好</p>
+                        </div>
+                    </a>
+                    <a href="#" class="goods">
+                        <div class="good_img">
+                            <img src="../img/index/goods/good1.png" class="good_all">
+                        </div>
+                        <div class="info">
+                            <h4 class="filter">西伯利亚游戏耳机外置声卡</h4>
+                            <p class="intro">采用西伯利亚游戏3D立体声卡</p>
+                            <p class="extra">0 人说好</p>
+                        </div>
+                    </a>
+                    <a href="#" class="goods">
+                        <div class="good_img">
+                            <img src="../img/index/goods/good1.png" class="good_all">
+                        </div>
+                        <div class="info">
+                            <h4 class="filter">西伯利亚游戏耳机外置声卡</h4>
+                            <p class="intro">采用西伯利亚游戏3D立体声卡</p>
+                            <p class="extra">0 人说好</p>
+                        </div>
+                    </a>
+                    <a href="#" class="goods">
+                        <div class="good_img">
+                            <img src="../img/index/goods/good1.png" class="good_all">
+                        </div>
+                        <div class="info">
+                            <h4 class="filter">西伯利亚游戏耳机外置声卡</h4>
+                            <p class="intro">采用西伯利亚游戏3D立体声卡</p>
+                            <p class="extra">0 人说好</p>
+                        </div>
+                    </a>
+                    <a href="#" class="goods">
+                        <div class="good_img">
+                            <img src="../img/index/goods/good1.png" class="good_all">
+                        </div>
+                        <div class="info">
+                            <h4 class="filter">西伯利亚游戏耳机外置声卡</h4>
+                            <p class="intro">采用西伯利亚游戏3D立体声卡</p>
+                            <p class="extra">0 人说好</p>
+                        </div>
+                    </a>
+                </ul>
+            </div>
+    </div>
+    <div style="width: 100%; float: left;">
+        <a href="#"><img src="../img/index/TB1MDBzuUY1gK0jSZFMSuuWcVXa.jpg" width="100%"></a>
     </div>
 </div>
-
-
+<!--热卖-->
 <div class="layer">
     <div class="hot_items">
         <h3>热卖单品</h3>
