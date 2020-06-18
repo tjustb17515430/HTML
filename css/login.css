@@ -6,14 +6,14 @@
             
             background-color: aliceblue;
             text-align: center;
-            color: #FF0000;
+            color: #f30c0c;
             font-weight: 900;
             font-size: 25px;
             align-self: center;
             padding-top:center;
             padding-bottom:center;
-            padding-right:500px;
-           padding-left:500px;
+            padding-right:70px;
+           padding-left:70px;
            border: 8px solid #73AD21;
         }
         .page{
