@@ -11,15 +11,57 @@
            margin: 0px;
            padding: 0px;
         }
+        /*顶部栏*/
+        .cover{
+            color: #000;
+        }
         .top{
             background-color:blanchedalmond;
             width:100%;
             border-bottom: 1px solid #eee;
             z-index: 9999;
+
         }
-        .cover{
-            color: #000;
+        .top_nav{
+            margin: 0 auto;
+            width: 1170px;
+            height: 50px;
+            background-color: cornsilk;
+            -webkit-backface-visibility: hidden;
         }
+        .nav_l{
+            visibility: visible;
+            float: left;
+            list-style: none;
+        }
+        .nav_r{
+            visibility: visible;
+            float: right;
+            list-style: none;
+        }
+        .nav_menu{
+            float: left;
+        }
+        .nav_menu_hd{
+            position: relative;
+            padding: 0 6px;
+            display: inline;
+            z-index: 10000;
+            height: 35px;
+        }
+        .nav_region{
+            
+        }
+
+
+
+
+
+
+
+
+
+
         .head{
             margin:0 auto 15px auto;
             width: 80%;
@@ -84,14 +126,14 @@
         a:visited {color:  rgb(121, 142, 160)}
 
       
-
-
-
         .layer{
             background-color: aqua;
             width:100%;
             clear: both;
         }
+
+        /*发现好货*/
+
         .discover{
             margin: 10px auto 10px auto;
             background-color: burlywood;
@@ -101,7 +143,6 @@
             overflow: hidden;
         }
         .goods_inner{
-
             position: relative;
             max-width: 585px;
             max-height: 620px;
@@ -166,6 +207,7 @@
            margin-top: 1px;
            margin-bottom: 1px;
         }
+        /*热卖单品*/
         .hot_items{
             background-color: rgb(241, 166, 166);
             margin: auto;
@@ -310,34 +352,37 @@
             <ul class="nav_l">
                 <li class="nav_menu">
                     <div class="nav_menu_hd">
-                        <span class="nav_region">中国大陆</span>
-                        <span class="nav_arrow">
-                            <span class="arrow_icon"></span>
-                        </span>
+                        <a href="#"><span class="nav_region">中国大陆</span></a>
                     </div>
-                    <div class="nav_menu_hd nav_menu_list">
-                        <ul class="nav_region_option">
-                            <li class="nav_region_item" role="option">
-                                全球
-                            </li>
-                            <li class="nav_region_item" role="option">
-                                中国大陆
-                            </li>
-                            <li class="nav_region_item" role="option">
-                                中国香港
-                            </li>
-                            <li class="nav_region_item" role="option">
-                                中国台湾
-                            </li>
-                            <li class="nav_region_item" role="option">
-                                中国澳门
-                            </li>
-                        </ul>
+                </li>
+                <li class="nav_menu">
+                    <div class="nav_menu_hd">
+                        <a href="#"><span class="nav_sign">登录</span></a>
+                        <a herf="#"><span class="nav_register">注册</span></a>
+                    </div>
+                </li>
+
+            </ul>
+
+            <ul class="nav_r">
+                <li class="nav_menu">
+                    <div class="nav_menu_hd">
+                        <a href="#"><span class="nav_cart">购物车</span></a>
+                    </div>
+                </li>
+                <li class="nav_menu">
+                    <div class="nav_menu_hd">
+                        <a href="#"><span class="nav_favorites">收藏</span></a>
+                    </div>
+                </li>
+                <li class="nav_menu">
+                    <div class="nav_menu_hd">
+                        <a href="#"><span class="nav_service">联系客服</span></a>
                     </div>
                 </li>
             </ul>
-        </div>
 
+        </div>
     </div>
 </div>
 
