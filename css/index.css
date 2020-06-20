@@ -87,15 +87,14 @@
  .head_img{
      height: 100%;
  }
- .head_search{
+ .head_search{ 
      margin:20px auto 10px auto;
      width: 50%;
      background-color: whitesmoke;
      height: 60px;
  }
  .search{
-    position:fixed;
-	top:0px;
+
 
      padding: 5px 0px 5px 0px;
      margin-top: 50px;
