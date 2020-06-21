@@ -1,0 +1,9 @@
+成员名单：
+计1704	17515430	吴鑫	index.html 主页
+计1704	17013113	吕笑天	login.html/register.html 登陆注册
+计1705	17515510	李文卓	item1.html 商品样例
+计1705	17515502	陈文成	search.html 搜索页面
+计1703	17515327	孙龙	service.html 客服页面
+计1703	165150331	杨帆	news.html 消息页面
+
+GitHub：https://github.com/tjustb17515430/HTML
